@@ -13,6 +13,12 @@ body{
     background-color: #c7d3e5;
 }
 
+
+/* Home Screen Section */
+#home{
+    top: 0;
+}
+
 .home-background{
     background-image: url("../static/table.JPG");
     background-position: center center;
@@ -22,18 +28,13 @@ body{
     background-color: #c7d3e5;
 }
 
-.logo{
-
+*{
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    height:60px;
-    align-items:center;
-    display: flex;
+nav{
+    position: fixed;
 }
 
 ul{
@@ -64,6 +65,8 @@ li a:hover{
     padding: 8%;
 }
 
+
+/* About Page  */
 #bio-pic{
     height: auto;
     width: auto;
