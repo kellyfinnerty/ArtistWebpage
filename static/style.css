@@ -6,25 +6,10 @@ html,body{
 body{
     text-align: center;
     color: #f4f6f9;
-    font-family: "Trebuchet", Helvetica, sans-serif;
+    font-family: "courier";
 }
 
 .background{
-    background-color: #c7d3e5;
-}
-
-
-/* Home Screen Section */
-#home{
-    top: 0;
-}
-
-.home-background{
-    background-image: url("../static/table.JPG");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     background-color: #c7d3e5;
 }
 
@@ -33,8 +18,13 @@ body{
     padding: 0;
 }
 
+
+/*Nav Bar*/
 nav{
     position: fixed;
+    background-color: rgb(217, 222, 169, 0.8);
+    opacity 0.5;
+    border-radius: 0px 2px 6px 2px;
 }
 
 ul{
@@ -42,10 +32,6 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-li{
-    float: left;
 }
 
 li a{
@@ -56,17 +42,55 @@ li a{
 }
 
 li a:hover{
-    background-color: pink;
+    background-color: rgb(209, 158, 199, 0.7);
+}
+
+
+/* Home Screen Section */
+#home{
+    top: 0;
+    min-height: 76vh;
+    padding-top: 24vh;
+}
+
+.home-background{
+    background-image: url("../static/table.JPG");
+    background-position: center center;
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #logo{
-    width: 40%;
+    width: 85vh;
     height: auto;
-    padding: 8%;
+}
+
+/*Pieces Section*/
+#pieces{
+    min-height: 100vh;
+    border-bottom-style: solid;
 }
 
 
+/*Showings Section*/
+#showings{
+    min-height: 100vh;
+    min-width: 50vh;
+    border-bottom-style: solid;
+}
+
+.section-header{
+    padding-top: 3vh;
+    font-size: 3em;
+}
+
 /* About Page  */
+#about{
+    min-height: 100vh;
+    border-bottom-style: solid;
+}
+
 #bio-pic{
     height: auto;
     width: auto;
@@ -84,13 +108,27 @@ li a:hover{
     float:left;
     height:65%;
     background-color:white;
-    padding: 10%;
+    padding: 10vh;
+    margin: 10vh 10vh 10vh 30vh;
 }
 
 #right{
-    width:auto;
+    width:10%;
     float:right;
     height:65%;
-    background-color:pink;
-    padding: 10%;
+    background-color: rgb(209, 158, 199, 0.9);
+    padding: 10vh;
+    margin: 10vh 20vh 10vh 10vh;
+}
+
+/* Contact */
+#contact{
+    min-height: 100vh;
+}
+
+#submit-button{
+}
+
+footer{
+    padding-bottom: 3vh;
 }
