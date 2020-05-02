@@ -1,134 +1,96 @@
-
-html,body{
-    height: 100%;
+:root {
+   --bone: #EAE0CC;
+   --old-gold: #D5B942;
+   --laurel-green: #ACBEA3;
+   --silver-pink: #C9ADA1;
+   --red-wood: #AD5D4E;
+   --pale-silver: #CFC0BD;
 }
 
-body{
+* {
+    font-family: 'Nunito', sans-serif;
     text-align: center;
-    color: #f4f6f9;
-    font-family: "courier";
+    color: #545040;
 }
 
-.background{
-    background-color: #c7d3e5;
+h1, h2{
+    margin: 20px 0px 25px 0px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.left{
+    text-align: left;
 }
 
-
-/*Nav Bar*/
-nav{
-    position: fixed;
-    background-color: rgb(217, 222, 169, 0.8);
-    opacity 0.5;
-    border-radius: 0px 2px 6px 2px;
+.row{
+    margin: 20px 25px 30px 25px;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.left {
+  float: left !important;
 }
 
-li a{
-    display: block;
-    color: white;
+a{
+    color: #7398e6;
+}
+
+a:hover{
+    color: var(--old-gold);
     text-decoration: none;
-    padding: 14px 16px;
 }
 
-li a:hover{
-    background-color: rgb(209, 158, 199, 0.7);
+h1, h2, h3{
+    font-weight: bold;
 }
 
-
-/* Home Screen Section */
-#home{
-    top: 0;
-    min-height: 76vh;
-    padding-top: 24vh;
+#col{
+    background-color: var(--old-gold);
 }
 
-.home-background{
-    background-image: url("../static/table.JPG");
-    background-position: center center;
-    /*background-repeat: no-repeat;*/
-    background-attachment: fixed;
-    background-size: cover;
+#profile-pic {
+    border-radius: 50%;
 }
 
-#logo{
-    width: 85vh;
+#map-pin {
+    margin-right: 5px;
+}
+
+#download-icon {
+    margin: 5px;
+}
+
+.contact-icon {
+    margin: 7px;
+}
+
+.project-img {
     height: auto;
+    width: 250px;
+    margin: 20px;
 }
 
-/*Pieces Section*/
-#pieces{
-    min-height: 100vh;
-    border-bottom-style: solid;
+.project{
+    background-color: rgba(240, 245, 255, 0.5);
+    outline: 3px solid var(--old-gold);
+    padding: 25px;
 }
 
-
-/*Showings Section*/
-#showings{
-    min-height: 100vh;
-    min-width: 50vh;
-    border-bottom-style: solid;
+#project-header {
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.section-header{
-    padding-top: 3vh;
-    font-size: 3em;
+.boundary{
+    border: 1px solid #545040;
 }
 
-/* About Page  */
-#about{
-    min-height: 100vh;
-    border-bottom-style: solid;
+.link-icon:hover {
+    color: var(--old-gold);
 }
 
-#bio-pic{
-    height: auto;
-    width: auto;
-    max-width: 300px;
-    max-height: 300px;
+#home-footer {
+    margin: 100px 0px 25px 0px;
 }
 
-#bio-container{
-    width:auto;
-    margin:auto;
-}
-
-#left{
-    width:auto;
-    float:left;
-    height:65%;
-    background-color:white;
-    padding: 10vh;
-    margin: 10vh 10vh 10vh 30vh;
-}
-
-#right{
-    width:10%;
-    float:right;
-    height:65%;
-    background-color: rgb(209, 158, 199, 0.9);
-    padding: 10vh;
-    margin: 10vh 20vh 10vh 10vh;
-}
-
-/* Contact */
-#contact{
-    min-height: 100vh;
-}
-
-#submit-button{
-}
-
-footer{
-    padding-bottom: 3vh;
+.socials-icons {
+    font-size: 1.25rem;
 }
